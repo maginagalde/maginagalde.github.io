@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    <script>
+      function cambiarIdioma(idioma) {
+        if (idioma === 'es') {
+          window.location.href = 'index-es.html';
+        } else {
+          window.location.href = 'index.html';
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- botones idioma -->
+    <div class="container mt-3">
+      <div class="float-end">
+        <button type="button" class="btn btn-primary btn-sm" onclick="cambiarIdioma('es')">ES</button>
+        <button type="button" class="btn btn-primary btn-sm" onclick="cambiarIdioma('en')">EN</button>
+      </div>
+    </div>
+    <nav id="desktop-nav">
+      <div class="logo">Maddalen Aginagalde</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Acerca de</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Maddalen Aginagalde</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Acerca de</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Imagen Foto de Perfil Redes Sociales Profile Original Azul.jpg" alt="Foto de perfil de Maddalen Aginagalde" id="foto-perfil-redonda" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hola, soy</p>
+        <h1 class="title">Maddalen Aginagalde</h1>
+        <p class="section__text__p2">Social Media Manager</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/cv_maginagalde_es.pdf')"
+          >
+            Descargar CV
+          </button>
+          <button 
+          class="btn btn-color-1" 
+          onclick="location.href='./#contacto'">
+            Contacto
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Mi perfil de LinkedIn"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/maddalen-aginagalde/?locale=es_ES', '_blank')"
+
+          />
+
+          <!-- Eliminando Github por ahora 
+          <img
+            src="./assets/github.png"
+            alt="Mi perfil de Github"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          /> -->
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Conoce Más</p>
+      <h1 class="title">Acerca de Mí</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/foto-perfil-bw.jpg"
+            alt="Foto de perfil"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Ícono de experiencia"
+                class="icon"
+              />
+              <h3>Experiencia</h3>
+              <p>10+ años <br />Account Manager</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Ícono de educación"
+                class="icon"
+              />
+              <h3>Educación</h3>
+              <p>CFGS Gestión de Ventas y Marketing <br />Certificación Meta de Marketing Digital </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Profesional con amplia experiencia internacional en ventas y marketing, buscando oportunidades desafiantes en el campo del Marketing Digital y gestión de redes sociales. Especializada en la gestión efectiva de clientes y  con habilidades demostradas para adaptarse a entornos cambiantes. 
+
+Busco contribuir al éxito de la empresa en un ambiente dinámico y enfocado en entornos digitales.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Ícono de flecha"
+        class="icon arrow"
+        onclick="location.href='./#experiencia'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explora Mi</p>
+      <h1 class="title">Experiencia</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Gestión de Redes Sociales</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>Estrategia en Redes Sociales</h3>
+                  <p>Planificación estratégica para campañas efectivas en redes sociales.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>Creación de Contenido</h3>
+                  <p>Desarrollo de contenido atractivo y compartible en diversas plataformas.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>Community Management</h3>
+                  <p>Creación y fomento de comunidades en línea para la participación de la marca.</p>
+                </div>
+              
+              </article>
+               
+              <article>
+                
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>Edición de Video </h3>
+                  <p>Adobe Premiere Pro</p>
+                </div>
+              </article>
+              <!-- Eliminamos 
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermedio</p>
+                </div> 
+              </article>
+              -->
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Marketing y Comunicación</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>Análisis de Marketing</h3>
+                  <p>Análisis de métricas de redes sociales para medir el éxito de la campaña.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>Comunicación</h3>
+                  <p>Comunicación efectiva y colaboración con equipos interfuncionales.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>Promoción de Marca</h3>
+                  <p>Promoción de la identidad y valores de la marca a través de canales sociales.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>Diseño Web</h3>
+                  <p>HTML, CSS, Javascript.</p>
+                </div>
+              </article>
+              <!-- Eliminamos esto 
+              <article>
+                
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermedio</p>
+                </div> 
+              </article>
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Ícono de flecha"
+        class="icon arrow"
+        onclick="location.href='./#proyectos'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Explora Mis Recientes</p>
+      <h1 class="title">Proyectos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/1.png"
+                alt="Proyecto 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Gestión de Redes Sociales</h2>
+            <!-- Eliminamos esto 
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Demo en Vivo
+              </button>
+            </div> 
+            -->
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/proyecto-testimonials.png"
+                alt="Proyecto 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Gestión de Comunidades</h2>
+             <!-- Eliminamos esto 
+            <div class="btn-container">
+             
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Demo en Vivo
+              </button>
+             
+            </div>
+             -->
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/proyecto-portfolio.png"
+                alt="Proyecto 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Desarrollo Web</h2>
+            <!-- borramos 
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">maddalenaginagalde@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/maddalen-aginagalde/?locale=es_ES" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Maddalen Aginagalde. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-oL1u6Cgm1Z7Z3DSctLF6OpCFRNcDPj6EXCp3b2nTzIq0vJ7t6qz2Pe4eS1L8aPT" crossorigin="anonymous"></script>
+  </body>
+</html>
